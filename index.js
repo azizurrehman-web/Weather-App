@@ -46,20 +46,20 @@ function checkweather() {
       const visibility = data.current.vis_km;
 
       weatherRef.innerHTML = `
-        <h2>🌤️ ${locationName}</h2>
+        <h2> ${locationName}</h2>
 
-        <p>📍 Region: ${locationRegion}</p>
+        <p> Region: ${locationRegion}</p>
 
-        <p>🌎 Country: ${locationCountry}</p>
+        <p> Country: ${locationCountry}</p>
 
-        <p>🕐 Local Time: ${localTime}</p>
+        <p> Local Time: ${localTime}</p>
 
         <hr>
 
-        <h3>🌡️ Temperature</h3>
+        <h3> Temperature</h3>
         <p>${temp}°C / ${((temp * 9) / 5 + 32).toFixed(1)}°F</p>
 
-        <h3>☁️ Weather</h3>
+        <h3> Weather</h3>
         <p>${condition}</p>
 
         <img 
@@ -67,24 +67,24 @@ function checkweather() {
           alt="${condition}"
         >
 
-        <p>🌡️ Feels Like: ${feelsLike}°C</p>
+        <p> Feels Like: ${feelsLike}°C</p>
 
         <hr>
 
-        <h3>💧 Humidity</h3>
+        <h3> Humidity</h3>
         <p>${humidity}%</p>
 
-        <h3>💨 Wind</h3>
+        <h3> Wind</h3>
         <p>${wind} kph</p>
 
-        <p>🧭 Wind Direction: ${windDirection}</p>
+        <p> Wind Direction: ${windDirection}</p>
 
-        <p>📐 Wind Degree: ${windDegree}°</p>
+        <p> Wind Degree: ${windDegree}°</p>
 
-        <h3>☁️ Cloud Coverage</h3>
+        <h3> Cloud Coverage</h3>
         <p>${cloud}%</p>
 
-        <h3>👁️ Visibility</h3>
+        <h3> Visibility</h3>
         <p>${visibility} km</p>
       `;
     })
