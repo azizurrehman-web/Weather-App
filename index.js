@@ -34,7 +34,6 @@ function checkweather() {
       // Current Weather
       const temp = data.current.temp_c;
       const condition = data.current.condition.text;
-      const icon = data.current.condition.icon;
       const feelsLike = data.current.feelslike_c;
 
       // Other information
@@ -54,22 +53,13 @@ function checkweather() {
 
         <p> Local Time: ${localTime}</p>
 
-        <hr>
-
         <h3> Temperature</h3>
         <p>${temp}°C / ${((temp * 9) / 5 + 32).toFixed(1)}°F</p>
 
         <h3> Weather</h3>
         <p>${condition}</p>
 
-        <img 
-          src="https:${icon}" 
-          alt="${condition}"
-        >
-
         <p> Feels Like: ${feelsLike}°C</p>
-
-        <hr>
 
         <h3> Humidity</h3>
         <p>${humidity}%</p>
